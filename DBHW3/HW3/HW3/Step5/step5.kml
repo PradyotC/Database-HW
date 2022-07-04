@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>DBHW3</name>
+    <description/>
+    <Style id="icon-1580-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1580-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1580-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1580-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1580-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1603-E65100-normal">
+      <IconStyle>
+        <color>ff0051e6</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1603-E65100-highlight">
+      <IconStyle>
+        <color>ff0051e6</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1603-E65100">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1603-E65100-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1603-E65100-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1664-7CB342-normal">
+      <IconStyle>
+        <color>ff42b37c</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1664-7CB342-highlight">
+      <IconStyle>
+        <color>ff42b37c</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1664-7CB342">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1664-7CB342-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1664-7CB342-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-000000-2000-nodesc-normal">
+      <LineStyle>
+        <color>ff000000</color>
+        <width>2</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-000000-2000-nodesc-highlight">
+      <LineStyle>
+        <color>ff000000</color>
+        <width>3</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-000000-2000-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-000000-2000-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-000000-2000-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="poly-9C27B0-3801-112-nodesc-normal">
+      <LineStyle>
+        <color>ffb0279c</color>
+        <width>3.801</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>70b0279c</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="poly-9C27B0-3801-112-nodesc-highlight">
+      <LineStyle>
+        <color>ffb0279c</color>
+        <width>5.7015</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>70b0279c</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="poly-9C27B0-3801-112-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-9C27B0-3801-112-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-9C27B0-3801-112-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Home</name>
+      <Placemark>
+        <name>Home</name>
+        <description><![CDATA[Lat: 34.0327028<br>Long: -118.2867361]]></description>
+        <styleUrl>#icon-1603-E65100</styleUrl>
+        <ExtendedData>
+          <Data name="Lat">
+            <value>34.0327028</value>
+          </Data>
+          <Data name="Long">
+            <value>-118.2867361</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -118.2867361,34.0327028,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Libraries</name>
+      <Placemark>
+        <name>Doheny</name>
+        <description><![CDATA[Lat: 34.020358<br>Long: -118.284064]]></description>
+        <styleUrl>#icon-1664-7CB342</styleUrl>
+        <ExtendedData>
+          <Data name="Lat">
+            <value>34.020358</value>
+          </Data>
+          <Data name="Long">
+            <value>-118.284064</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -118.284064,34.020358,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hoose</name>
+        <description><![CDATA[Lat: 34.018761<br>Long: -118.286719]]></description>
+        <styleUrl>#icon-1664-7CB342</styleUrl>
+        <ExtendedData>
+          <Data name="Lat">
+            <value>34.018761</value>
+          </Data>
+          <Data name="Long">
+            <value>-118.286719</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -118.286719,34.018761,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Helen Topping</name>
+        <description><![CDATA[Lat: 34.019244<br>Long: -118.287728]]></description>
+        <styleUrl>#icon-1664-7CB342</styleUrl>
+        <ExtendedData>
+          <Data name="Lat">
+            <value>34.019244</value>
+          </Data>
+          <Data name="Long">
+            <value>-118.287728</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -118.287728,34.019244,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>S and E</name>
+        <description><![CDATA[Lat: 34.019558<br>Long: -118.288575]]></description>
+        <styleUrl>#icon-1664-7CB342</styleUrl>
+        <ExtendedData>
+          <Data name="Lat">
+            <value>34.019558</value>
+          </Data>
+          <Data name="Long">
+            <value>-118.288575</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -118.288575,34.019558,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Int and PA</name>
+        <description><![CDATA[Lat: 34.021069<br>Long: -118.284119]]></description>
+        <styleUrl>#icon-1664-7CB342</styleUrl>
+        <ExtendedData>
+          <Data name="Lat">
+            <value>34.021069</value>
+          </Data>
+          <Data name="Long">
+            <value>-118.284119</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -118.284119,34.021069,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Leavy</name>
+        <description><![CDATA[Lat: 34.021592<br>Long: -118.283058]]></description>
+        <styleUrl>#icon-1664-7CB342</styleUrl>
+        <ExtendedData>
+          <Data name="Lat">
+            <value>34.021592</value>
+          </Data>
+          <Data name="Long">
+            <value>-118.283058</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -118.283058,34.021592,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Fountains</name>
+      <Placemark>
+        <name>Cinematics</name>
+        <description><![CDATA[Lat: 34.0237<br>Long: -118.286353]]></description>
+        <styleUrl>#icon-1580-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Lat">
+            <value>34.0237</value>
+          </Data>
+          <Data name="Long">
+            <value>-118.286353</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -118.286353,34.0237,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Generations</name>
+        <description><![CDATA[Lat: 34.0223<br>Long: -118.283211]]></description>
+        <styleUrl>#icon-1580-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Lat">
+            <value>34.0223</value>
+          </Data>
+          <Data name="Long">
+            <value>-118.283211</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -118.283211,34.0223,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Village</name>
+        <description><![CDATA[Lat: 34.025264<br>Long: -118.285133]]></description>
+        <styleUrl>#icon-1580-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Lat">
+            <value>34.025264</value>
+          </Data>
+          <Data name="Long">
+            <value>-118.285133</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -118.285133,34.025264,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Y Triumphant</name>
+        <description><![CDATA[Lat: 34.020614<br>Long: -118.2846]]></description>
+        <styleUrl>#icon-1580-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Lat">
+            <value>34.020614</value>
+          </Data>
+          <Data name="Long">
+            <value>-118.2846</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -118.2846,34.020614,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hahn Plaza</name>
+        <description><![CDATA[Lat: 34.0202222<br>Long: -118.2874665]]></description>
+        <styleUrl>#icon-1580-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Lat">
+            <value>34.0202222</value>
+          </Data>
+          <Data name="Long">
+            <value>-118.2874665</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -118.2874665,34.0202222,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Epstein Plaza</name>
+        <description><![CDATA[Lat: 34.020431<br>Long: -118.289017]]></description>
+        <styleUrl>#icon-1580-0288D1</styleUrl>
+        <ExtendedData>
+          <Data name="Lat">
+            <value>34.020431</value>
+          </Data>
+          <Data name="Long">
+            <value>-118.289017</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -118.289017,34.020431,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Step 5</name>
+      <Placemark>
+        <name>Convex Hull</name>
+        <styleUrl>#poly-9C27B0-3801-112-nodesc</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -118.286719,34.018761,0
+                -118.284064,34.020358,0
+                -118.283058,34.021592,0
+                -118.283211,34.0223,0
+                -118.286736,34.032703,0
+                -118.289017,34.020431,0
+                -118.288575,34.019558,0
+                -118.286719,34.018761,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Nearest</name>
+        <styleUrl>#line-000000-2000-nodesc</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -118.286736,34.032703,0
+            -118.285133,34.025264,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

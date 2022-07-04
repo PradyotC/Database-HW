@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>OpenLayer</title>
+<script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.14.1/build/ol.js"></script>
+
+<style>
+#map {
+    width:400px;
+    height:400px;
+}
+</style>
+</head>
+
+<body>
+<div id="map"></div>
+
+
+<script>
+var d = {"k1":[
+{'lat':34.0327028, 'long':-118.2867361},
+{'lat':34.0237, 'long':-118.286353},
+{'lat':34.0223, 'long':-118.283211},
+{'lat':34.025264, 'long':-118.285133},
+{'lat':34.020614, 'long':-118.2846},
+{'lat':34.0202222, 'long':-118.2874665},
+{'lat':34.020431, 'long':-118.289017},
+{'lat':34.020358, 'long':-118.284064},
+{'lat':34.018761, 'long':-118.286719},
+{'lat':34.019244, 'long':-118.287728},
+{'lat':34.019558, 'long':-118.288575},
+{'lat':34.021069, 'long':-118.284119},
+{'lat':34.021592, 'long':-118.283058}
+]};
+
+localStorage.setItem("myData",JSON.stringify(d));
+
+var dataStored = JSON.parse(localStorage.getItem("myData"));
+
+var a = dataStored.k1;
+var map;
+
+function initMap() {
+
+   map = new ol.Map({
+        target: 'map',
+        layers: [
+          new ol.layer.Tile({
+            source: new ol.source.OSM()
+          })
+        ],
+        view: new ol.View({
+          center: ol.proj.fromLonLat([-118.28497530787939,34.02565507967151]), 
+          zoom: 15,
+          maxZoom: 15
+        })
+      });
+}// initMap()
+
+function addMarker(lat, lon) {
+var layer = new ol.layer.Vector({
+     source: new ol.source.Vector({
+         features: [
+             new ol.Feature({
+                 geometry: new ol.geom.Point(ol.proj.fromLonLat([lon,lat]))
+             })
+         ]
+     })
+ });
+ map.addLayer(layer);
+}
+
+initMap();
+
+var indx = {}
+for(indx in a) { 
+  addMarker(a[indx]['lat'],a[indx]['long']); 
+} 
+
+</script>
+
+</body>
+
+</html>

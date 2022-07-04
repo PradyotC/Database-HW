@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+
+  <body>
+    <canvas
+      id="canvas"
+      width="500"
+      height="500"
+      style="border: 1px solid #000000"
+    >
+    </canvas>
+    <button onclick="download_csv_file()"> Download CSV </button>
+  </body>
+  <script>
+    var data = "";
+    var canvas = document.getElementById("canvas");
+
+    if (canvas.getContext) {
+      var ctx = canvas.getContext("2d");
+      ctx.beginPath();
+
+      var R = 8,
+        r = 1,
+        a = 4;
+      var x0 = R + r - a,
+        y0 = 0;
+      ctx.moveTo(150 + 10 * x0, 150 + 10 * y0);
+
+      var cos = Math.cos,
+        sin = Math.sin,
+        pi = Math.PI,
+        nRev = 16;
+      for (var t = 0.0; t < pi * nRev; t += 0.01) {
+        var x = (R + r) * cos((r / R) * t) - a * cos((1 + r / R) * t);
+        var y = (R + r) * sin((r / R) * t) - a * sin((1 + r / R) * t);
+        ctx.lineTo(150 + 10 * x, 150 + 10 * y);
+        data += ((x*0.00008) - 118.28912330241518).toString()+","+((y*0.00008) + 34.02134696630152).toString()+",0\n";
+
+      }
+    }
+    ctx.stroke();
+    function download_csv_file() {  
+    var hiddenElement = document.createElement('a');  
+    hiddenElement.href = 'data:text/csv;charset=utf-8,' + encodeURI(data);  
+    hiddenElement.target = '_blank';  
+    hiddenElement.download = 'data1.csv';  
+    hiddenElement.click();  
+    }  
+  </script>
+</html>
+
+<!-- 
+Here we can click and download the csv.
+The downloaded csv contains all the co-ordinates of the spirograph.
+ -->

@@ -1,0 +1,37 @@
+CREATE TABLE IF NOT EXISTS dbhw3 (
+	loc varchar(15),
+	geog geography
+);
+
+insert into dbhw3 values ('Home','SRID=4326;POINT(-118.2867361 34.0327028)');
+insert into dbhw3 values ('Cinematics','SRID=4326;POINT(-118.286353 34.0237)');
+insert into dbhw3 values ('Generations','SRID=4326;POINT(-118.283211 34.0223)');
+insert into dbhw3 values ('Village','SRID=4326;POINT(-118.285133 34.025264)');
+insert into dbhw3 values ('Y Triumphant','SRID=4326;POINT(-118.2846 34.020614)');
+insert into dbhw3 values ('Hahn Plaza','SRID=4326;POINT(-118.2874665 34.0202222)');
+insert into dbhw3 values ('Epstein Plaza','SRID=4326;POINT(-118.289017 34.020431)');
+insert into dbhw3 values ('Doheny','SRID=4326;POINT(-118.284064 34.020358)');
+insert into dbhw3 values ('Hoose','SRID=4326;POINT(-118.286719 34.018761)');
+insert into dbhw3 values ('Helen Topping','SRID=4326;POINT(-118.287728 34.019244)');
+insert into dbhw3 values ('S and E','SRID=4326;POINT(-118.288575 34.019558)');
+insert into dbhw3 values ('Int and PA','SRID=4326;POINT(-118.284119 34.021069)');
+insert into dbhw3 values ('Leavy','SRID=4326;POINT(-118.283058 34.021592)');
+
+Finding Convex hull
+
+Select st_astext(ST_ConvexHull(ST_Collect(geog::geometry))) As polygon
+FROM dbhw3;
+
+Answer
+
+POLYGON((-118.286719 34.018761,-118.288575 34.019558,-118.289017 34.020431,-118.2867361 34.0327028,-118.283211 34.0223,-118.283058 34.021592,-118.284064 34.020358,-118.286719 34.018761))
+
+Finding Nearest Neighbour From Home
+
+select loc
+from dbhw3
+where loc != 'Home'
+order by geog <-> (select geog from dbhw3 where loc = 'Home')
+limit 1;
+
+Village
